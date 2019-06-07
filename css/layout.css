@@ -325,10 +325,10 @@ ul#nav li.current a { color: #F06000; }
    border-radius: 3px 0 0 3px;
 }
 
-.photoshop {
+.ruby {
   	width: 60%;
-  	-moz-animation: photoshop 2s ease;
-  	-webkit-animation: photoshop 2s ease;
+  	-moz-animation: ruby 2s ease;
+  	-webkit-animation: ruby 2s ease;
 }
 .illustrator {
   	width: 55%;
