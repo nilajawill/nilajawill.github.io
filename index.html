@@ -87,9 +87,9 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#mh-coursework">Coursework</a>
                             </li>
-                            <!--<li class="nav-item">
+                            <li class="nav-item">
                                 <a class="nav-link" href="#mh-portfolio">Projects</a>
-                            </li>-->
+                            </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#mh-contact">Contact</a>
                             </li>
@@ -118,8 +118,8 @@
                             <h2 class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">Nilaja Williams</h2>
                             <h4 class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">Junior Web Developer</h4>
                             <ul>
-                                <li class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s"><i class="fa fa-envelope"></i><a href="mailto:">nilajawill@gmail.com</a></li>
-                                <li class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.5s"><i class="fa fa-phone"></i><a href="callto:">(470) 529-9117</a></li>
+                                <li class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s"><i class="fa fa-envelope"></i><a href="mailto:nilajawill@gmail.com">nilajawill@gmail.com</a></li>
+                                <li class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.5s"><i class="fa fa-phone"></i><a href="callto:(470)-529-9117">(470) 529-9117</a></li>
                             </ul>
 
                             <ul class="social-icon wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.7s">
@@ -413,7 +413,7 @@
         ===================
            PORTFOLIO
         ===================
-        
+        -->
     <section class="mh-portfolio" id="mh-portfolio">
         <div class="container">
             <div class="row section-separator">
@@ -424,48 +424,63 @@
                     <div class="portfolio-nav col-sm-12" id="filter-button">
                         <ul>
                             <li data-filter="*" class="current wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.1s"> <span>All Categories</span></li>
-                            <li data-filter=".user-interface" class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s"><span>Web Design</span></li>
-                            <li data-filter=".branding" class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s"><span>Branding</span></li>
-                            <li data-filter=".mockup" class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s"><span>Mockups</span></li>
-                            <li data-filter=".ui" class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.5s"><span>Photography</span></li>
+                            <li data-filter=".personal" class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s"><span>Personal</span></li>
+                            <li data-filter=".school" class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s"><span>School</span></li>
+                            <!--<li data-filter=".mockup" class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s"><span>Mockups</span></li>-->
+                            <li data-filter=".other" class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.5s"><span>Other</span></li>
                         </ul>
                     </div>
                     <div class="mh-project-gallery col-sm-12 wow fadeInUp" id="project-gallery" data-wow-duration="0.8s" data-wow-delay="0.5s">
                         <div class="portfolioContainer row">
-                            <div class="grid-item col-md-4 col-sm-6 col-xs-12 user-interface">
+                            <!-- Project: The Music Bin -->
+                            <div class="grid-item col-md-4 col-sm-6 col-xs-12 personal">
                                 <figure>
-                                    <img src="assets/images_demo/portfolio/g1.jpg" alt="img04">
+                                    <img src="assets/images/modal/music_bin/music-grid.jpg" alt="img04">
                                     <figcaption class="fig-caption">
                                         <i class="fa fa-search"></i>
-                                        <h5 class="title">Creative Design</h5>
-                                        <span class="sub-title">Photograpy</span>
-                                        <a data-fancybox data-src="#mh"></a>
+                                        <h5 class="title">The Music Bin</h5>
+                                        <span class="sub-title">Rails App</span>
+                                        <a href="assets/images/modal/music_bin/music-grid.jpg" data-fancybox data-src="#music_bin"></a>
                                     </figcaption>
                                 </figure>
                             </div>
-                            <div class="grid-item col-md-4 col-sm-6 col-xs-12 ui mockup">
+                            <!-- Project: GGRA -->
+                            <div class="grid-item col-md-4 col-sm-6 col-xs-12 ui school">
                                 <figure>
-                                    <img src="assets/images_demo/portfolio/g2.png" alt="img04">
+                                    <img src="assets/images/modal/ggra/ggra-grid.jpg" alt="img04">
                                     <figcaption class="fig-caption">
                                         <i class="fa fa-search"></i>
-                                        <h5 class="title">Creative Design</h5>
-                                        <span class="sub-title">Photograpy</span>
-                                        <a href="assets/images_demo/portfolio/g2.png" data-fancybox data-src="#mh"></a>
+                                        <h5 class="title">GGRA</h5>
+                                        <span class="sub-title">ASP.NET App</span>
+                                        <a href="assets/images/modal/ggra/ggra-grid.jpg" data-fancybox data-src="#ggra"></a>
                                     </figcaption>
                                 </figure>
                             </div>
-                            <div class="grid-item col-md-4 col-sm-6 col-xs-12 user-interface">
+                            <!-- Project: GGCMaps -->
+                            <div class="grid-item col-md-4 col-sm-6 col-xs-12 school">
                                 <figure>
-                                    <img src="assets/images_demo/portfolio/g3.png" alt="img04">
+                                    <img src="assets/images/modal/ggcmaps/ggcmaps-grid.jpg" alt="img04">
                                     <figcaption class="fig-caption">
                                         <i class="fa fa-search"></i>
-                                        <h5 class="title">Creative Design</h5>
-                                        <span class="sub-title">Photograpy</span>
-                                        <a href="assets/images_demo/portfolio/g3.png" data-fancybox data-src="#mh"></a>
+                                        <h5 class="title">GGCMaps</h5>
+                                        <span class="sub-title">Javascript App</span>
+                                        <a href="assets/images/modal/ggcmaps/ggcmaps-grid.jpg" data-fancybox data-src="#ggcmaps"></a>
                                     </figcaption>
                                 </figure>
                             </div>
-                            <div class="grid-item col-md-4 col-sm-6 col-xs-12 branding">
+                            <!-- Project: Leningen -->
+                            <div class="grid-item col-md-4 col-sm-6 col-xs-12 other personal">
+                                <figure>
+                                    <img src="assets/images/modal/leningen/leningen-grid.jpg" alt="img04">
+                                    <figcaption class="fig-caption">
+                                        <i class="fa fa-search"></i>
+                                        <h5 class="title">Leningen</h5>
+                                        <span class="sub-title">Installation Made Easy!</span>
+                                        <a href="assets/images/modal/leningen/leningen-grid.jpg" data-fancybox data-src="#leningen"></a>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <!--<div class="grid-item col-md-4 col-sm-6 col-xs-12 branding">
                                 <figure>
                                     <img src="assets/images_demo/portfolio/g5.png" alt="img04">
                                     <figcaption class="fig-caption">
@@ -475,107 +490,168 @@
                                         <a href="assets/images_demo/portfolio/g5.png" data-fancybox data-src="#mh"></a>
                                     </figcaption>
                                 </figure>
-                            </div>
-                            <div class="grid-item col-md-4 col-sm-6 col-xs-12 user-interface">
-                                <figure>
-                                    <img src="assets/images_demo/portfolio/g4.png" alt="img04">
-                                    <figcaption class="fig-caption">
-                                        <i class="fa fa-search"></i>
-                                        <h5 class="title">Creative Design</h5>
-                                        <span class="sub-title">Photograpy</span>
-                                        <a href="assets/images_demo/portfolio/g4.png" data-fancybox data-src="#mh"></a>
-                                    </figcaption>
-                                </figure>
-                            </div>
-                            <div class="grid-item col-md-4 col-sm-6 col-xs-12 branding">
-                                <figure>
-                                    <img src="assets/images_demo/portfolio/g6.png" alt="img04">
-                                    <figcaption class="fig-caption">
-                                        <i class="fa fa-search"></i>
-                                        <h5 class="title">Creative Design</h5>
-                                        <span class="sub-title">Photograpy</span>
-                                        <a href="assets/images_demo/portfolio/g6.png" data-fancybox data-src="#mh"></a>
-                                    </figcaption>
-                                </figure>
-                            </div>
-                            <div class="grid-item col-md-4 col-sm-6 col-xs-12 branding">
-                                <figure>
-                                    <img src="assets/images_demo/portfolio/g8.png" alt="img04">
-                                    <figcaption class="fig-caption">
-                                        <i class="fa fa-search"></i>
-                                        <h5 class="title">Creative Design</h5>
-                                        <span class="sub-title">Photograpy</span>
-                                        <a href="assets/images_demo/portfolio/g8.png" data-fancybox data-src="#mh"></a>
-                                    </figcaption>
-                                </figure>
-                            </div>
-                            <div class="grid-item col-md-4 col-sm-6 col-xs-12 ui">
-                                <figure>
-                                    <img src="assets/images_demo/portfolio/g9.png" alt="img04">
-                                    <figcaption class="fig-caption">
-                                        <i class="fa fa-search"></i>
-                                        <h5 class="title">Creative Design</h5>
-                                        <span class="sub-title">Photograpy</span>
-                                        <a href="assets/images_demo/portfolio/g9.png" data-fancybox data-src="#mh"></a>
-                                    </figcaption>
-                                </figure>
-                            </div>
-                            <div class="grid-item col-md-4 col-sm-6 col-xs-12 branding">
-                                <figure>
-                                    <img src="assets/images_demo/portfolio/g7.jpg" alt="img04">
-                                    <figcaption class="fig-caption">
-                                        <i class="fa fa-search"></i>
-                                        <h5 class="title">Creative Design</h5>
-                                        <span class="sub-title">Photograpy</span>
-                                        <a href="assets/images_demo/portfolio/g7.jpg" data-fancybox="gallery"></a>
-                                    </figcaption>
-                                </figure>
-                            </div>
+                            </div>-->
                         </div>
-                        <!-- End: .grid .project-gallery 
+                        <!-- End: .grid .project-gallery -->
                     </div>
-                    <!-- End: .grid .project-gallery 
+                    <!-- End: .grid .project-gallery -->
                 </div>
-                <!-- End: .part 
+                <!-- End: .part -->
             </div>
-            <!-- End: .row 
+            <!-- End: .row -->
         </div>
-        <div class="mh-portfolio-modal" id="mh">
+        <!-- Project: The Music Bin -->
+        <div class="mh-portfolio-modal" id="music_bin">
             <div class="container">
                 <div class="row mh-portfolio-modal-inner">
                     <div class="col-sm-5">
-                        <h2>Wrap - A campanion plugin</h2>
-                        <p>Wrap is a clean and elegant Multipurpose Landing Page Template. It will fit perfectly for Startup, Web App or any type of Web Services. It has 4 background styles with 6 homepage styles. 6 pre-defined color scheme. All variations
-                            are organized separately so you can use / customize the template very easily.</p>
+                        <h2>The Music Bin</h2>
 
-                        <p>It is a clean and elegant Multipurpose Landing Page Template. It will fit perfectly for Startup, Web App or any type of Web Services. It has 4 background styles with 6 homepage styles. 6 pre-defined color scheme. All variations
-                            are organized separately so you can use / customize the template very easily.</p>
+                        <p><strong>The Music Bin Webapp</strong> is a creative solution to an interesting compliant from a friend. For anyone who has saved Youtube videos in playlist,
+                        you may have come across <strong>certain videos disappearing due to copyright issues or country regulations</strong>. 
+                        These, as my friend stated, creates <strong>"holes"</strong> in your playlist.</p>
+
+                        <p>Therefore, to ensure that songs can always be found, I created a Rails App that <strong>stores basic information about songs</strong> 
+                        - the title and artist of the song, it's Youtube link (if applicable), and an option to add notes. With The Music Bin Webapp, <strong>you will never lose a song again!</strong></p>
                         <div class="mh-about-tag">
                             <ul>
-                                <li><span>php</span></li>
-                                <li><span>html</span></li>
-                                <li><span>css</span></li>
-                                <li><span>php</span></li>
-                                <li><span>wordpress</span></li>
-                                <li><span>React</span></li>
-                                <li><span>Javascript</span></li>
+                                <li><span>ruby</span></li>
+                                <li><span>ruby on rails</span></li>
+                                <li><span>github</span></li>
+                                <li><span>bitbucket</span></li>
+                                <li><span>heroku</span></li>
+                                <li><span>javascript</span></li>
                             </ul>
                         </div>
-                        <a href="" class="btn btn-fill">Live Demo</a>
+                        <a href="https://fathomless-mesa-39587.herokuapp.com/" class="btn btn-fill">Add to the Bin!</a>
                     </div>
+                    
                     <div class="col-sm-7">
                         <div class="mh-portfolio-modal-img">
-                            <img src="assets/images_demo/pr-0.jif" alt="" class="img-fluid">
-                            <p>All variations are organized separately so you can use / customize the template very easily.</p>
-                            <img src="assets/images_demo/pr-1.jif" alt="" class="img-fluid">
-                            <p>All variations are organized separately so you can use / customize the template very easily.</p>
+                            <img src="assets/images/modal/music_bin/music_bin_pic.png" alt="" class="img-fluid">
+                            <p>The Music Bin Webapp index includes all songs add, sorted by creation date.</p>
+                            <img src="assets/images/modal/music_bin/signup.png" alt="" class="img-fluid">
+                            <p>Users can sign up with valid information in order to add music to the bin.</p>
+                            <img src="assets/images/modal/music_bin/login.png" alt="" class="img-fluid">
+                            <p>The Music Bin Webapp enforces secure login and signup via SSL.</p>
+                            <img src="assets/images/modal/music_bin/crud.png" alt="" class="img-fluid">
+                            <p>Once signed in, users are allowed to create, edit, and delete any song.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Project: GGRA -->
+        <div class="mh-portfolio-modal" id="ggra">
+            <div class="container">
+                <div class="row mh-portfolio-modal-inner">
+                    <div class="col-sm-5">
+                        <h2>GGRA</h2>
+                        <p>Resource Portal for the Greater Gwinnett Re-entry Alliance, an organization whose cause is to aid those being remitted 
+                        into the public sector after time served. </p>
+                        
+                        <p>Features List:</p>
+                        <div class="details-list">
+                            <i class="fa fa-check-circle-o"></i>Partnership/Membership Access<br>
+                            <i class="fa fa-check-circle-o"></i>Dynamic Resource Database<br>
+                            <i class="fa fa-check-circle-o"></i>GGRA Staff CRM portal<br>
+                            <i class="fa fa-check-circle-o"></i>Re-working of existing Website<br><br>
+                        </div>
+                        <p>My Role(s)</p>
+                        <div class="details-list">
+                            <i class="fa fa-check-circle-o"></i>Client Liaison<br>
+                            <i class="fa fa-check-circle-o"></i>UX/UI Designer<br>
+                            <i class="fa fa-check-circle-o"></i>Back-end Developer<br>
+                        </div>
+                        
+                        <div class="mh-about-tag">
+                            <ul>
+                                <li><span>azure</span></li>
+                                <li><span>c#</span></li>
+                                <li><span>vs</span></li>
+                                <li><span>asp.net</span></li>
+                                <li><span>entity framework</span></li>
+                                <li><span>json</span></li>
+                                <li><span>html/css</span></li>
+                            </ul>
+                        </div>
+                        <a href="https://github.com/soft-eng-practicum/GGRAwebsite" class="btn btn-fill">Github Repo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Project: GGC Maps -->
+        <div class="mh-portfolio-modal" id="ggcmaps">
+            <div class="container">
+                <div class="row mh-portfolio-modal-inner">
+                    <div class="col-sm-5">
+                        <h2>GGC Maps</h2>
+
+                        <p>Progressive Web App designed to help students, staff, and security officials locate certain buildings, rooms, and/or events within Georgia Gwinnett College.</p>
+                        
+                        <p>Features List:</p>
+                        <div class="details-list">
+                            <i class="fa fa-check-circle-o"></i>Online/Offline Accessibility<br>
+                            <i class="fa fa-check-circle-o"></i>Safety Mode Toggle<br>
+                            <i class="fa fa-check-circle-o"></i>Predictive Search Functionality<br>
+                            <i class="fa fa-check-circle-o"></i>Legend Toggle Option (Re-worked)<br>
+                            <i class="fa fa-check-circle-o"></i>Event Schedule Display<br><br>
+                        </div>
+                        <p>My Role(s)</p>
+                        <div class="details-list">
+                            <i class="fa fa-check-circle-o"></i>Client Liaison<br>
+                            <i class="fa fa-check-circle-o"></i>UX/UI Designer<br>
+                            <i class="fa fa-check-circle-o"></i>Project Manager<br>
+                        </div>
+                        <div class="mh-about-tag">
+                            <ul>
+                                <li><span>javascript</span></li>
+                                <li><span>json</span></li>
+                                <li><span>html/css</span></li>
+                            </ul>
+                        </div>
+                        <a href="https://github.com/soft-eng-practicum/ggcmaps" class="btn btn-fill">Github Repo</a>
+                    </div>
+                    
+                    <div class="col-sm-7">
+                        <div class="mh-portfolio-modal-img">
+                            <img src="assets/images/modal/ggcmaps/index.png" alt="" class="img-fluid">
+                            <p>Users are welcomed with the layout of Georgia Gwinnett College.</p>
+                            <img src="assets/images/modal/ggcmaps/menu.png" alt="" class="img-fluid">
+                            <p>Instead of using the search bar, users can select a building from the menu.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Project: Leningen -->
+        <div class="mh-portfolio-modal" id="leningen">
+            <div class="container">
+                <div class="row mh-portfolio-modal-inner">
+                    <div class="col-sm-5">
+                        <h2>Leningen</h2>
+
+                        <p>Leningen Installation Instruction is my response to a frustrating time I experienced while dabbling with Clojure. 
+                        Included, are instructions on installing Leningen on the top three OS.</p>
+                        <div class="mh-about-tag">
+                            <ul>
+                                <li><span>markdown</span></li>
+                                <li><span>github</span></li>
+                            </ul>
+                        </div>
+                        <a href="https://github.com/nilajawill/leiningen-installation-instructions" class="btn btn-fill">Github Repo</a>
+                    </div>
+                    
+                    <div class="col-sm-7">
+                        <div class="mh-portfolio-modal-img">
+                            <img src="assets/images/modal/leningen/repo.png" alt="" class="img-fluid">
+                            <p>Main README.md for Leningen Installation Instructions</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    -->
     <!--
         ===================
            FOOTER 3
