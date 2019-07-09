@@ -1,4 +1,3 @@
-/*global jQuery*/
 (function($) {
   "use strict";
   
@@ -330,53 +329,54 @@
     | CONTACT FORM
     |=================
     */
-        
+      
       $("#contactForm").validator().on("submit", function (event) {
-          if (event.isDefaultPrevented()) {
-            // handle the invalid form...
-            formError();
-            submitMSG(false, "Did you fill in the form properly?");
-          } else {
-            // everything looks good!
-            event.preventDefault();
-            submitForm();
-          }
-       });
+        if (event.isDefaultPrevented()) {
+        // handle the invalid form...
+        } else {
+        // everything looks good!
+          event.preventDefault();
+          submitForm();
+        }
+      });
     
-        function submitForm(){
-          var name = $("#name").val();
-          var email = $("#email").val();
-          var message = $("#message").val();
-          $.ajax({
-              type: "POST",
-              url: "process.php",
-              data: "name=" + name + "&email=" + email + "&message=" + message,
-              success: function(text){
-                  if (text == "success"){
-                      formSuccess();
-                    } else {
-                      formError();
-                      submitMSG(false,text);
-                    }
-                }
-            });
-        }
-        function formSuccess(){
-            $("#contactForm")[0].reset();
-            submitMSG(true, "Message Sent!")
-        }
-    	  function formError(){   
-    	    $("#contactForm").removeClass().addClass('shake animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-    	        $(this).removeClass();
-    	    });
-    	  }
-        function submitMSG(valid, msg){
-          if(valid){
-            var msgClasses = "h3 text-center fadeInUp animated text-success";
+       function submitForm(){
+    // Initiate Variables With Form Content
+    var name = $("#name").val();
+    var email = $("#email").val();
+    var message = $("#message").val();
+$.ajax({
+      type: "POST",
+      url: "process.php",
+      data: "name=" + name + "&email=" + email + "&message=" + message,
+      success : function(text){
+          if (text == "success"){
+              formSuccess();
           } else {
-            var msgClasses = "h3 text-center shake animated text-danger";
+              formError();
+              submitMSG(false,text);
           }
-          $("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
-        }
+      }
+  });
+}
+function formSuccess(){
+    $("#contactForm")[0].reset();
+submitMSG(true, "Message Submitted!");
+}
+     
+    	 function formError(){
+    $("#contactForm").removeClass().addClass('shake animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+        $(this).removeClass();
+    });
+}
+        function submitMSG(valid, msg){
+        var msgClasses;
+    if(valid){
+        msgClasses = "h3 text-center tada animated text-success";
+    } else {
+        msgClasses = "h3 text-center text-danger";
+    }
+    $("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
+}
     
 }(jQuery));
