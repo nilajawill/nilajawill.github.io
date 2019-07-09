@@ -1,3 +1,4 @@
+/*global jQuery*/
 (function($) {
   "use strict";
   
@@ -350,7 +351,7 @@
               type: "POST",
               url: "process.php",
               data: "name=" + name + "&email=" + email + "&message=" + message,
-              success : function(text){
+              success: function(text){
                   if (text == "success"){
                       formSuccess();
                     } else {
@@ -377,7 +378,5 @@
           }
           $("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
         }
-    
-
     
 }(jQuery));
