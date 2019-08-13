@@ -2686,3 +2686,10 @@ BLOG Pagination
 
 /*# sourceMappingURL=styles.css.map */
 
+/*=========
+CUSTOM
+=========*/
+.contact-img {
+  max-height: 85%;
+  max-width: 85%;
+}
